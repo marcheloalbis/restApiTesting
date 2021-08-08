@@ -25,7 +25,6 @@ public class CRUDItemTest {
     public void verifyCRUDforProject(){
         JSONObject body = new JSONObject();
         body.put("Content","Marcelo");
-        body.put("Icon",4);
 
         RequestInformation request = new RequestInformation(ConfigAPI.CREATE_ITEM,body.toString());
         Response response = FactoryRequest.make(FactoryRequest.POST).send(request);
